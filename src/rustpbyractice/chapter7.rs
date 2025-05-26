@@ -1,5 +1,9 @@
-/// https://practice.course.rs/flow-control.html
-#[test]
-fn test71() {
+fn main() {
+    for n in 1..100 { // modify this line to make the code work
+        if n == 100 {
+            panic!("NEVER LET THIS RUN")
+        }
+    }
 
+    println!("Success!");
 }
