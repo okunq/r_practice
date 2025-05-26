@@ -1,20 +1,13 @@
-/// https://practice.course.rs/variables.html
-#[test]
-fn test31() {
+// Only modify `assert_eq!` to make the `println!` work(print `42` in terminal)
+fn main() {
     let x: i32 = 5;
-    let _y: i32;
+    {
+        let x = 12;
+        assert_eq!(x, 12);
+    }
 
     assert_eq!(x, 5);
-    println!("Success!");
-}
 
-#[test]
-fn test399() {
-    let x = 5;
-    let y = 10;
-
-    let real = x + y;
-    let expected = 15;
-
-    assert_eq!(real, expected);
+    let x = 42;
+    println!("{}", x); // Prints "42".
 }
