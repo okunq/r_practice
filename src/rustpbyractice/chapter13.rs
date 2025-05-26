@@ -1,5 +1,16 @@
-/// https://practice.course.rs/result-panic/intro.html
-#[test]
-fn test131() {
+// FILL the blanks
+fn drink(beverage: &str) {
+    if beverage == "lemonade" {
+        println!("Success!");
+        // IMPLEMENT the below code
+        return;
+     }
 
+    println!("Exercise Failed if printing out this line!");
+}
+
+fn main() {
+    drink("lemonade");
+
+    println!("Exercise Failed if printing out this line!");
 }
